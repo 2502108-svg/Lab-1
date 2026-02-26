@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>First Lab Completion</title>
+</head>
+
+<body>
+
+    <h1>Lab 1</h1>
+    <h2>Learning JavaScript Concepts</h2>
+
+    <script>
+        const fetchData = async function () {
+            const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+            const data = await response.json();
+
+            console.log("Wajahat Habib fetching data");
+            console.log(data);
+        };
+
+        fetchData();
+    </script>
+
+</body>
+</html>
